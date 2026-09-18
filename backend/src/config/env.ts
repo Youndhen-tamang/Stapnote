@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import path from "path";
 
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+dotenv.config({ path: path.resolve(__dirname, "../../.env") }); // backend/.env
 
 function required(name: string, fallback?: string): string {
   const value = process.env[name] ?? fallback;
